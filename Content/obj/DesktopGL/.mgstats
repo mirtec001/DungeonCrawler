@@ -1,0 +1,9 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"/home/pete/Documents/dotnet/DungeonCrawler/Content/images/background.png","/home/pete/Documents/dotnet/DungeonCrawler/Content/bin/DesktopGL/images/background.xnb","TextureProcessor","Texture2DContent",13705,1920085,0.1554096
+"/home/pete/Documents/dotnet/DungeonCrawler/Content/images/gameover.png","/home/pete/Documents/dotnet/DungeonCrawler/Content/bin/DesktopGL/images/gameover.xnb","TextureProcessor","Texture2DContent",14550,1920085,0.0402865
+"/home/pete/Documents/dotnet/DungeonCrawler/Content/images/gamesplash.png","/home/pete/Documents/dotnet/DungeonCrawler/Content/bin/DesktopGL/images/gamesplash.xnb","TextureProcessor","Texture2DContent",17747,1920085,0.0435124
+"/home/pete/Documents/dotnet/DungeonCrawler/Content/images/highlight.png","/home/pete/Documents/dotnet/DungeonCrawler/Content/bin/DesktopGL/images/highlight.xnb","TextureProcessor","Texture2DContent",793,80085,0.0020583
+"/home/pete/Documents/dotnet/DungeonCrawler/Content/images/playbutton.png","/home/pete/Documents/dotnet/DungeonCrawler/Content/bin/DesktopGL/images/playbutton.xnb","TextureProcessor","Texture2DContent",3548,80085,0.0028151
+"/home/pete/Documents/dotnet/DungeonCrawler/Content/images/player.png","/home/pete/Documents/dotnet/DungeonCrawler/Content/bin/DesktopGL/images/player.xnb","TextureProcessor","Texture2DContent",766,4181,0.0006856
+"/home/pete/Documents/dotnet/DungeonCrawler/Content/images/quitbutton.png","/home/pete/Documents/dotnet/DungeonCrawler/Content/bin/DesktopGL/images/quitbutton.xnb","TextureProcessor","Texture2DContent",3219,80085,0.0063071
+"/home/pete/Documents/dotnet/DungeonCrawler/Content/images/wall.png","/home/pete/Documents/dotnet/DungeonCrawler/Content/bin/DesktopGL/images/wall.xnb","TextureProcessor","Texture2DContent",691,4181,0.0006062
