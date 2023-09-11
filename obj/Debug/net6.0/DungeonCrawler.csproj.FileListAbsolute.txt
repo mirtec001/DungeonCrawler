@@ -1,3 +1,10 @@
+/home/pete/Documents/dotnet/DungeonCrawler/bin/Debug/net6.0/Content/images/background.xnb
+/home/pete/Documents/dotnet/DungeonCrawler/bin/Debug/net6.0/Content/images/gameover.xnb
+/home/pete/Documents/dotnet/DungeonCrawler/bin/Debug/net6.0/Content/images/gamesplash.xnb
+/home/pete/Documents/dotnet/DungeonCrawler/bin/Debug/net6.0/Content/images/highlight.xnb
+/home/pete/Documents/dotnet/DungeonCrawler/bin/Debug/net6.0/Content/images/playbutton.xnb
+/home/pete/Documents/dotnet/DungeonCrawler/bin/Debug/net6.0/Content/images/player.xnb
+/home/pete/Documents/dotnet/DungeonCrawler/bin/Debug/net6.0/Content/images/quitbutton.xnb
 /home/pete/Documents/dotnet/DungeonCrawler/bin/Debug/net6.0/DungeonCrawler
 /home/pete/Documents/dotnet/DungeonCrawler/bin/Debug/net6.0/DungeonCrawler.deps.json
 /home/pete/Documents/dotnet/DungeonCrawler/bin/Debug/net6.0/DungeonCrawler.runtimeconfig.json
@@ -23,10 +30,3 @@
 /home/pete/Documents/dotnet/DungeonCrawler/obj/Debug/net6.0/DungeonCrawler.pdb
 /home/pete/Documents/dotnet/DungeonCrawler/obj/Debug/net6.0/DungeonCrawler.genruntimeconfig.cache
 /home/pete/Documents/dotnet/DungeonCrawler/obj/Debug/net6.0/ref/DungeonCrawler.dll
-/home/pete/Documents/dotnet/DungeonCrawler/bin/Debug/net6.0/Content/images/background.xnb
-/home/pete/Documents/dotnet/DungeonCrawler/bin/Debug/net6.0/Content/images/playbutton.xnb
-/home/pete/Documents/dotnet/DungeonCrawler/bin/Debug/net6.0/Content/images/quitbutton.xnb
-/home/pete/Documents/dotnet/DungeonCrawler/bin/Debug/net6.0/Content/images/highlight.xnb
-/home/pete/Documents/dotnet/DungeonCrawler/bin/Debug/net6.0/Content/images/gameover.xnb
-/home/pete/Documents/dotnet/DungeonCrawler/bin/Debug/net6.0/Content/images/gamesplash.xnb
-/home/pete/Documents/dotnet/DungeonCrawler/bin/Debug/net6.0/Content/images/player.xnb

@@ -1,14 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "M91QxDge7DK8ZH5fZsZSmizZyQGi9usf/rfLqbaVP48wlLIS4KBdrUdKA7YiDpP0KjGWjiLh0Gy9y8YjlSiHpQ==",
+  "dgSpecHash": "uXti3hUPIr5jK1l+6LsP0qfy6I12mknLIRKy0MEKO2qjqTjj7G0CO2/SGwgX3s1VLk32GHRc9WmuTNtMi4Fykw==",
   "success": true,
   "projectFilePath": "/home/pete/Documents/dotnet/DungeonCrawler/DungeonCrawler.csproj",
   "expectedPackageFiles": [
     "/home/pete/.nuget/packages/monogame.content.builder.task/3.8.1.303/monogame.content.builder.task.3.8.1.303.nupkg.sha512",
-    "/home/pete/.nuget/packages/monogame.framework.desktopgl/3.8.1.303/monogame.framework.desktopgl.3.8.1.303.nupkg.sha512",
-    "/home/pete/.nuget/packages/microsoft.netcore.app.ref/6.0.21/microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
-    "/home/pete/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.21/microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512",
-    "/home/pete/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.21/microsoft.netcore.app.host.linux-x64.6.0.21.nupkg.sha512"
+    "/home/pete/.nuget/packages/monogame.framework.desktopgl/3.8.1.303/monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
   ],
   "logs": []
 }
