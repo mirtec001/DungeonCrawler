@@ -107,11 +107,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/pete/Documents/dotnet/DungeonCrawler/DungeonCrawler.csproj",
+      "projectUniqueName": "/home/pete/Documents/DungeonCrawler/DungeonCrawler.csproj",
       "projectName": "DungeonCrawler",
-      "projectPath": "/home/pete/Documents/dotnet/DungeonCrawler/DungeonCrawler.csproj",
+      "projectPath": "/home/pete/Documents/DungeonCrawler/DungeonCrawler.csproj",
       "packagesPath": "/home/pete/.nuget/packages/",
-      "outputPath": "/home/pete/Documents/dotnet/DungeonCrawler/obj/",
+      "outputPath": "/home/pete/Documents/DungeonCrawler/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/pete/.nuget/NuGet/NuGet.Config"
@@ -163,7 +163,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/pete/.dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
       }
     }
   }
