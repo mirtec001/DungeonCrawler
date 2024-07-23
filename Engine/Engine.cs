@@ -1,40 +1,34 @@
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.Graphics;
-
 namespace DungeonCrawler.Engine;
 
 public class Engine
 {
     public States.States CurrentState { get; set; }
-    public ContentManager ContentManager { get; set; }
-    public SpriteBatch SpriteBatch { get; set; }
-    
+
     private MainMenu MainMenu;
     private Game Game;
     private GameOver GameOver;
 
-    
+
     public void Initialize()
     {
-        MainMenu = new MainMenu(ContentManager, this);
-        Game = new Game(ContentManager, this);
-        GameOver = new GameOver(ContentManager, this);
-        
+        MainMenu = new MainMenu(this);
+        Game = new Game(this);
+        GameOver = new GameOver(this);
+
     }
 
-    public void Update(GameTime gameTime)
+    public void Update()
     {
         switch (CurrentState)
         {
             case States.States.MainMenu:
-                MainMenu.Update(gameTime);
+                MainMenu.Update();
                 break;
             case States.States.Game:
-                Game.Update(gameTime);
+                Game.Update();
                 break;
             case States.States.GameOver:
-                GameOver.Update(gameTime);
+                GameOver.Update();
                 break;
         }
     }
@@ -44,13 +38,13 @@ public class Engine
         switch (CurrentState)
         {
             case States.States.MainMenu:
-                MainMenu.Draw(SpriteBatch);
+                MainMenu.Draw();
                 break;
             case States.States.Game:
-                Game.Draw(SpriteBatch);
+                Game.Draw();
                 break;
             case States.States.GameOver:
-                GameOver.Draw(SpriteBatch);
+                GameOver.Draw();
                 break;
         }
     }

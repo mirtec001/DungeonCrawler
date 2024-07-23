@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>/home/pete/Documents/dotnet/DungeonCrawler/Content/images/background.png</File>
+    <File>/home/pete/Documents/dotnet/DungeonCrawler/Content/images/gameover.png</File>
+    <File>/home/pete/Documents/dotnet/DungeonCrawler/Content/images/gamesplash.png</File>
+    <File>/home/pete/Documents/dotnet/DungeonCrawler/Content/images/highlight.png</File>
+    <File>/home/pete/Documents/dotnet/DungeonCrawler/Content/images/playbutton.png</File>
+    <File>/home/pete/Documents/dotnet/DungeonCrawler/Content/images/player.png</File>
+    <File>/home/pete/Documents/dotnet/DungeonCrawler/Content/images/quitbutton.png</File>
+    <File>/home/pete/Documents/dotnet/DungeonCrawler/Content/images/wall.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

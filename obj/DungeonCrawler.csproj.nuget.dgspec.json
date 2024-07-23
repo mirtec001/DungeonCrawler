@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/home/pete/Documents/DungeonCrawler/DungeonCrawler.csproj": {}
+    "/home/pete/Documents/dotnet/DungeonCrawler/DungeonCrawler.csproj": {}
   },
   "projects": {
-    "/home/pete/Documents/DungeonCrawler/DungeonCrawler.csproj": {
+    "/home/pete/Documents/dotnet/DungeonCrawler/DungeonCrawler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/pete/Documents/DungeonCrawler/DungeonCrawler.csproj",
+        "projectUniqueName": "/home/pete/Documents/dotnet/DungeonCrawler/DungeonCrawler.csproj",
         "projectName": "DungeonCrawler",
-        "projectPath": "/home/pete/Documents/DungeonCrawler/DungeonCrawler.csproj",
+        "projectPath": "/home/pete/Documents/dotnet/DungeonCrawler/DungeonCrawler.csproj",
         "packagesPath": "/home/pete/.nuget/packages/",
-        "outputPath": "/home/pete/Documents/DungeonCrawler/obj/",
+        "outputPath": "/home/pete/Documents/dotnet/DungeonCrawler/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/pete/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net8.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -35,8 +35,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "MonoGame.Content.Builder.Task": {
               "target": "Package",
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

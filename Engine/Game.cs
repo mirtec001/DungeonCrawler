@@ -1,9 +1,4 @@
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.Graphics;
 using DungeonCrawler.Objects;
-using System.Collections.Generic;
-
 
 namespace DungeonCrawler.Engine;
 
@@ -28,20 +23,20 @@ public class Game
         new(){"W"," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," ","W"},
         new(){"W"," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," ","W"},
         new(){"W"," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," ","W"},
-        new(){"W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W"}        
+        new(){"W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W","W"}
     };
 
-    public Game(ContentManager contentManager, Engine engine)
+    public Game(Engine engine)
     {
         this.engine = engine;
-        player = new Player(contentManager, new Vector2(100, 100));
+        player = new Player(new Vector2(100, 100));
         for (int y = 0; y < level.Count; y++)
         {
             for (int x = 0; x < level[y].Count; x++)
             {
                 if (level[y][x] == "W")
                 {
-                    Wall tempWall = new Wall(contentManager)
+                    Wall tempWall = new Wall()
                     {
                         Position = new Vector2(x * 32, y * 32)
                     };
@@ -51,17 +46,17 @@ public class Game
         }
     }
 
-    public void Update(GameTime gameTime)
+    public void Update()
     {
-        player.Update(gameTime);
+        player.Update();
     }
 
-    public void Draw(SpriteBatch spriteBatch)
+    public void Draw()
     {
-        foreach(Wall wall in walls)
+        foreach (Wall wall in walls)
         {
-            wall.Draw(spriteBatch);
+            wall.Draw();
         }
-        player.Draw(spriteBatch);
+        player.Draw();
     }
 }

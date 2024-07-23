@@ -1,7 +1,3 @@
-﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-
 namespace DungeonCrawler;
 
 public class Game1 : Game
@@ -21,18 +17,19 @@ public class Game1 : Game
     protected override void Initialize()
     {
         // TODO: Add your initialization logic here
-        engine.ContentManager = Content;
         engine.CurrentState = States.States.MainMenu;
+
+        Globals.Content = Content;
         engine.Initialize();
-        
+
 
         base.Initialize();
     }
- 
+
     protected override void LoadContent()
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
-        engine.SpriteBatch = _spriteBatch;
+        Globals.SpriteBatch = _spriteBatch;
         // TODO: use this.Content to load your game content here
     }
 
@@ -41,9 +38,11 @@ public class Game1 : Game
         if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
             Exit();
 
+        Globals.Update(gameTime);
+        engine.Update();
         // TODO: Add your update logic here
         base.Update(gameTime);
-        engine.Update(gameTime);
+
     }
 
     protected override void Draw(GameTime gameTime)

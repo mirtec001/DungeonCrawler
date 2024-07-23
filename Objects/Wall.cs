@@ -1,26 +1,22 @@
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.Graphics;
-
-using DungeonCrawler.Objects;
+namespace DungeonCrawler.Objects;
 
 public class Wall : GameObject
 {
-    public Vector2 Position {get; set; }
+    public Vector2 Position { get; set; }
     private readonly Texture2D wallTexture;
-    
-    public Wall(ContentManager contentManager)
+
+    public Wall()
     {
-        wallTexture = contentManager.Load<Texture2D>("images/wall");
-    }
-    
-    public override void Draw(SpriteBatch spriteBatch)
-    {
-        spriteBatch.Draw(wallTexture, Position, Color.White);
+        wallTexture = Globals.Content.Load<Texture2D>("images/wall");
     }
 
-    public override void Update(GameTime gameTime)
+    public override void Draw()
     {
-        
+        Globals.SpriteBatch.Draw(wallTexture, Position, Color.White);
+    }
+
+    public override void Update()
+    {
+
     }
 }

@@ -1,8 +1,3 @@
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-
 namespace DungeonCrawler.Objects;
 
 public class Player : GameObject
@@ -11,17 +6,17 @@ public class Player : GameObject
     Vector2 position;
     Vector2 size;
 
-    public Player(ContentManager contentManager, Vector2 position)
+    public Player(Vector2 position)
     {
-        texture = contentManager.Load<Texture2D>("images/player");
+        texture = Globals.Content.Load<Texture2D>("images/player");
         size = new Vector2(texture.Width, texture.Height);
     }
-    public override void Draw(SpriteBatch spriteBatch)
+    public override void Draw()
     {
-        spriteBatch.Draw(texture, position, Color.White);
+        Globals.SpriteBatch.Draw(texture, position, Color.White);
     }
 
-    public override void Update(GameTime gameTime)
+    public override void Update()
     {
         KeyboardState currentState = Keyboard.GetState();
 

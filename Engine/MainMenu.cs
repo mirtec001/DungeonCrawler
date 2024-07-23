@@ -1,10 +1,5 @@
-using System;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-
 namespace DungeonCrawler.Engine;
+
 public class MainMenu
 {
     Texture2D background;
@@ -20,20 +15,20 @@ public class MainMenu
 
     private Engine engine;
 
-    public MainMenu(ContentManager contentManager, Engine engine)
+    public MainMenu(Engine engine)
     {
-        background = contentManager.Load<Texture2D>("images/background");
-        playButton = contentManager.Load<Texture2D>("images/playbutton");
-        quitButton = contentManager.Load<Texture2D>("images/quitbutton");
-        highlight = contentManager.Load<Texture2D>("images/highlight");
+        background = Globals.Content.Load<Texture2D>("images/background");
+        playButton = Globals.Content.Load<Texture2D>("images/playbutton");
+        quitButton = Globals.Content.Load<Texture2D>("images/quitbutton");
+        highlight = Globals.Content.Load<Texture2D>("images/highlight");
         playButtonPos = new Vector2(100, 350);
         quitButtonPos = new Vector2(500, 350);
         highlightPos = playButtonPos;
         this.engine = engine;
-        
-    }   
 
-    public void Update(GameTime gameTime)
+    }
+
+    public void Update()
     {
         mmCurrentKeyState = Keyboard.GetState();
         if (mmCurrentKeyState.IsKeyUp(Keys.Left) && mmPreviousKeyState.IsKeyDown(Keys.Left))
@@ -75,11 +70,11 @@ public class MainMenu
         mmPreviousKeyState = mmCurrentKeyState;
     }
 
-    public void Draw(SpriteBatch spriteBatch)
+    public void Draw()
     {
-        spriteBatch.Draw(background, new Vector2(0, 0), Color.White);
-        spriteBatch.Draw(playButton, playButtonPos, Color.White);
-        spriteBatch.Draw(quitButton, quitButtonPos, Color.White);
-        spriteBatch.Draw(highlight, highlightPos, Color.White);
+        Globals.SpriteBatch.Draw(background, new Vector2(0, 0), Color.White);
+        Globals.SpriteBatch.Draw(playButton, playButtonPos, Color.White);
+        Globals.SpriteBatch.Draw(quitButton, quitButtonPos, Color.White);
+        Globals.SpriteBatch.Draw(highlight, highlightPos, Color.White);
     }
 }

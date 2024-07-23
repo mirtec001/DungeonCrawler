@@ -1,7 +1,3 @@
-using System;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.Graphics;
 
 namespace DungeonCrawler.Engine;
 
@@ -12,27 +8,27 @@ public class GameOver
     private float WaitToShowMainMenu = 5;
     Engine engine;
 
-    public GameOver(ContentManager contentManager, Engine engine)
-    {   
-        gameOver = contentManager.Load<Texture2D>("images/gameover");
+    public GameOver(Engine engine)
+    {
+        gameOver = Globals.Content.Load<Texture2D>("images/gameover");
         this.engine = engine;
         Console.WriteLine("GameOver created");
     }
 
-    public void Update(GameTime gameTime)
+    public void Update()
     {
         if (WaitToShowMainMenu > 0)
         {
-            WaitToShowMainMenu -= (float) gameTime.ElapsedGameTime.TotalSeconds;
+            WaitToShowMainMenu -= Globals.TotalSeconds;
             if (WaitToShowMainMenu <= 0)
             {
-                this.engine.CurrentState = States.States.MainMenu; 
+                this.engine.CurrentState = States.States.MainMenu;
             }
         }
     }
 
-    public void Draw(SpriteBatch spriteBatch)
+    public void Draw()
     {
-        spriteBatch.Draw(gameOver, new Vector2(0, 0), Color.White);
+        Globals.SpriteBatch.Draw(gameOver, new Vector2(0, 0), Color.White);
     }
 }
